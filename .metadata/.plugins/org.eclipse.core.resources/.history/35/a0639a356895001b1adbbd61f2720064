@@ -1,0 +1,52 @@
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class PANELESCENARIO extends JPanel{
+	
+	//EN ESTA CLASE ES DONDE VAMOS A CREAR EL ESCENARIO DE NUESTRO JUEGO:
+		//FONDO
+		//COVIDS
+		//VACUNA
+		//PERSONAJE
+	
+	//Vamos a definir los parametros y atributos del escenario
+	
+	private int NCOVID; //numero de bichitos Covid
+	private final int WIDTH= 600, HEIGHT=700; //son las dimensiones del escenario
+	private ImageIcon IMAGEN;
+	private ImageIcon[] VECTOR_COVID; 
+	private int[] POS_X;
+	private int[] POS_Y;
+	
+	
+	public PANELESCENARIO() {
+		
+		IMAGEN = new ImageIcon("/Juego Covid/src/images_background.png");
+		//así tenemos la imagen que utilizamos como fondo del escenario
+		
+		NCOVID = 1; //numero inicial de bichitos Covid
+		
+		VECTOR_COVID = new ImageIcon[3]; 
+		//hemos creado un vector de imagenes para los 3 bichos Covid que vamos a tener que incluir
+		POS_X= new int[3]; //para almacenar la coordenada X de los 3 bichos Covid
+		POS_Y = new int[3]; //para almacenar la coordenada Y de los 3 bichos Covid
+		
+		
+		//Vamos a situar el primero de los bichillos Covid
+		
+		VECTOR_COVID[0] = new ImageIcon("images_covid.png"); 
+		//tenemos el primer bichito Covid en el vector de imagenes
+		POS_X[0]= 400; //coordenada X del primer bicho Covid
+		POS_Y[0]= 100; //coordenada Y del primer bicho Covid
+	
+		
+		
+		
+		
+		
+	}
+	
+
+}

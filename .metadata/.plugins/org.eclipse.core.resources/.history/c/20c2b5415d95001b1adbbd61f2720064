@@ -1,0 +1,21 @@
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+
+//Con esta clase independiente vamos a poder
+//tener el titulo de nuestro juego.
+
+public class PANELTITULO  extends JPanel {
+	
+	private JLabel LABELTITULO; //esta es la label o etiqueta
+	
+	public PANELTITULO() {
+		
+		LABELTITULO = new JLabel(); //creo la etiqueta titulo tipo etiqueta
+		
+		LABELTITULO.setFont()
+	}
+
+}
